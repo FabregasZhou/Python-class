@@ -1,7 +1,11 @@
 我们需要两个软件：Pycharm和Anaconda。其中Pycharm作为Python编辑器，Anaconda作为编译器，同时Anaconda可以提供许多第三方Python库的安装。下载网址如下：
+
 Anaconda：https://www.anaconda.com/distribution/
+
 Pycharm：https://www.jetbrains.com/pycharm/download/#section=windows
+
 Anaconda选择Python3.7的64-Bit Graphical Installer下载，注意您所用的电脑系统版本不要选错
+
 如果为在校学生，可以免费使用专业版Pycharm，其他情况只能自行百度搜索破解方法了（手动滑稽），但其实用Community版也无妨
 
 下载完毕后先安装Anaconda，记住你的安装路径，勾选选项Add Anaconda to my PATH environment variable 一路确认即可

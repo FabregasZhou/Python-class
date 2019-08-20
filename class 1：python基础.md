@@ -1,42 +1,29 @@
 1.1 输入和输出
 
-
 计算机程序本质上是要为人服务的，与人服务就涉及到一个交互的过程，而交互实际上包括了人的信息的输入和计算机信息的输出两个过程
-
 
 输出：
 
-
-Python中使用print()函数输出，将内容打印出来（即将所需内容显示在电脑屏幕上）。
-
-以学习大部分计算机语言时的第一个程序hello world为例，python中只需要一句print('Hello world!')即可实现。
+Python中使用print()函数输出，将内容打印出来（即将所需内容显示在电脑屏幕上）。以学习大部分计算机语言时的第一个程序hello world为例，python中只需要一句print('Hello world!')即可实现。
 
 同时我们还可以按顺序打印多个字符串，多个字符串之间用逗号隔开，程序在print时会自动给字符串之间加上空格。print('Hello','world！')实现的效果和print('Hello world!')相同
 
 同时，print()还可以将变量指向的内容打印出来，看下面的例子：
 
-
-name = 'Joe'
-
+name = 'Joe'  
 print('Hello', name, '!')
-
 
 运行这段程序，会打印 Hello Joe !
 
 当然变量指向的内容不一定要是字符串，我们对上面的例子进行拓展：
 
-
-name = 'Joe'
-
-score = 60
-
+name = 'Joe'  
+score = 60  
 print('Hello', name, '!', 'your score is', score)
-
 
 运行这段程序，会打印 Hello Joe ! your score is 60
 
 同时print()还可以打印列表、元组、字典等等，我们之后再讲
-
 
 输入：
 
@@ -44,15 +31,12 @@ Python提供input()函数作为输入，用户通过键盘将字符串写入变�
 
 一般情况下，我们在让用户输入的时候，会打印一句话提示用户要输入的内容，否则用户可能会一头雾水，以为程序卡住了。我们看下面的例子：
 
-
 name = input('Please input your name:')
-
 
 通过上面例子所示的语法我们即可实现刚刚所说的在用户输入前给予提示的功能。
 
-
+****
 1.2 数据类型
-
 
 整数： 如100
 
@@ -60,19 +44,15 @@ name = input('Please input your name:')
 
 字符串： 如'Joe'，通过单引号、双引号或三引号括起。
 
-布尔型： True和False（注意大小写）。 布尔型变量有其特殊的运算————与、或、非，对应的关键字为and、or、not。
-
-两个True的与运算结果为True，即True and True = True，否则为False；
-
-两个False的或预算结果为False，即False or False = False，否则为True；
-
+布尔型： True和False（注意大小写）。 布尔型变量有其特殊的运算————与、或、非，对应的关键字为and、or、not。  
+两个True的与运算结果为True，即True and True = True，否则为False；  
+两个False的或预算结果为False，即False or False = False，否则为True；  
 not True = False, not False = True
 
 空值： Null。注意Null和0不是一回事！
 
-
+****
 1.3 转义字符
-
 
 字符串一般通过单引号或双引号括起来，如'Joe', "Lynne"，如果说字符串内含单引号，那么这个字符串就用双引号括起来，反之亦然。
 
@@ -82,15 +62,13 @@ print('I\\'m fine.')
 
 由于字符串里含单引号，如果不做任何处理，程序会报错，因为程序认为这个字符串内只有一个字母I，剩下的m fine.不含在字符串里面。而在单引号前加上转义字符\后，就可以正常显示了。也就是说，转义字符和他后面的那一个符号是一个整体，占据相应的位置。还有其他转义字符如\n表示换行，\t表示制表符，\\表示\
 
-
+****
 1.4 注释
 
-
-使用#注释掉#后的内容（只限于这一行）
-
+使用#注释掉#后的内容（只限于这一行）  
 如果要注释多行内容，需要用三引号'''括起
 
-
+****
 作业：
 
 用户输入姓名，对其进行问候。如：用户输入Lynne，打印Hello Lynne！，用户输入Joe，打印Hello Joe！

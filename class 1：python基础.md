@@ -10,16 +10,16 @@ Python中使用print()函数输出，将内容打印出来（即将所需内容�
 
 同时，print()还可以将变量指向的内容打印出来，看下面的例子：
 
-name = 'Joe'  
-print('Hello', name, '!')
+    name = 'Joe'
+    print('Hello', name, '!')
 
 运行这段程序，会打印 Hello Joe !
 
 当然变量指向的内容不一定要是字符串，我们对上面的例子进行拓展：
 
-name = 'Joe'  
-score = 60  
-print('Hello', name, '!', 'your score is', score)
+    name = 'Joe'
+    score = 60
+    print('Hello', name, '!', 'your score is', score)
 
 运行这段程序，会打印 Hello Joe ! your score is 60
 
@@ -31,7 +31,7 @@ Python提供input()函数作为输入，用户通过键盘将字符串写入变�
 
 一般情况下，我们在让用户输入的时候，会打印一句话提示用户要输入的内容，否则用户可能会一头雾水，以为程序卡住了。我们看下面的例子：
 
-name = input('Please input your name:')
+    name = input('Please input your name:')
 
 通过上面例子所示的语法我们即可实现刚刚所说的在用户输入前给予提示的功能。
 
@@ -58,7 +58,7 @@ not True = False, not False = True
 
 那如果字符串里单引号双引号都有怎么办？或者说万一我就想用单引号括起来怎么办？这是就需要用到转义字符了。我们看下面的例子：
 
-print('I\\'m fine.')
+    print('I\\'m fine.')
 
 由于字符串里含单引号，如果不做任何处理，程序会报错，因为程序认为这个字符串内只有一个字母I，剩下的m fine.不含在字符串里面。而在单引号前加上转义字符\后，就可以正常显示了。也就是说，转义字符和他后面的那一个符号是一个整体，占据相应的位置。还有其他转义字符如\n表示换行，\t表示制表符，\\表示\
 

@@ -2,11 +2,11 @@ list：
 
 list是一个可改变的有序集合，用中括号[]括起，元素间用逗号隔开。我们看下面的例子：
 
-names = ['Joe', 'Lynne', 'Bob']  
-print(names)  
-print(len(names))  
-print(names[0])  
-print(names[-1])
+    names = ['Joe', 'Lynne', 'Bob']
+    print(names)
+    print(len(names))
+    print(names[0])
+    print(names[-1])
 
 这里建立了一个名为names的list，里面三个元素为字符串'Joe','Lynne'和'Bob'。可以通过print()函数打印list。  
 len()函数会返回list内的元素个数  
@@ -15,12 +15,12 @@ list内元素是有序的，从编号0开始，假如共有n个元素，编号�
 
 上面的例子只体现出了list的有序集合这一特点，那么可改变这一特点体现在何处呢？我们看一看下面的例子：
 
-names = ['Joe', 'Lynne']  
-names.append('Bob')  
-the_last_name = names.pop()  
-names[0] = 'Zhou'  
-names.insert(1, 'Joe')  
-the_first_name = names.pop(0)
+    names = ['Joe', 'Lynne']
+    names.append('Bob')
+    the_last_name = names.pop()
+    names[0] = 'Zhou'
+    names.insert(1, 'Joe')
+    the_first_name = names.pop(0)
 
 在每一句代码后加上一句print(name)以查看每次操作后的效果。  
 append()函数用于在list的末尾添加新元素，pop(x)函数用于删除并返回list编号为x的元素，缺省时作用于list最末尾的元素  
@@ -36,11 +36,11 @@ tuple：
 
 tuple是不可改变的有序集合，用小括号()括起，元素间用逗号隔开。我们看下面的例子：
 
-names = ('Joe', 'Lynne', 'Bob')  
-print(names)  
-print(len(names))  
-print(names[0])  
-print(names[-1])
+    names = ('Joe', 'Lynne', 'Bob')
+    print(names)
+    print(len(names))
+    print(names[0])
+    print(names[-1])
 
 这里和list完全一样，只是tuple是用小括号括起，而list是用中括号括起。
 

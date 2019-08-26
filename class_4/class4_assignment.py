@@ -51,7 +51,7 @@ while True:
         n = 0
 
         for name, grade in grades.items():
-            print(name + ':' + grade)
+            print(name + ':' + str(grade))
 
             ave = ave + grade
             n = n + 1

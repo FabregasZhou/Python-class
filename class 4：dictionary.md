@@ -20,7 +20,7 @@ dictionary：
 Joe['fat']返回名为'fat'的key对应的value，如果没有这个key，则程序报错；  
 执行Joe['handsome'] = True时，会先检查字典Joe中是否有'handsome'这个key，有的话直接修改他的value为True，没有的话则在这个dict中添加这对key-value；  
 'grade' in Joe返回的布尔型变量表示名为'grade'的key是否在字典Joe中；  
-Joe.get('gender')在'gender'不存在时和'gender' in Joe是等价的，都返回False，但'gender'存在时返回其对应的value；  
+Joe.get('gender')在'gender'不存在时返回None，但'gender'存在时返回其对应的value；  
 get()方法可以指定key不存在时返回的值，Joe.get('grade', -1)指定了'grade'不存在时返回值-1；  
 Joe.pop('fat')返回'fat'对应的value，并将这一对key-value从dict中删除
 

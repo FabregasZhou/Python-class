@@ -1,0 +1,19 @@
+# use of pyinstaller
+
+pyinstaller是将python程序打包成exe文件的一个工具
+
+首先通过pip安装
+
+    pip install pyinstaller
+    
+通过命令行进入要打包的.py文件所在目录，通过下面的指令打包
+
+    pyinstaller -F -p F:\Python27\Lib  -i logo.ico mian.py --noconsole
+    
+-F表示打包成一个文件 与之对应的是-D
+
+通过-p指定库的目录，如果环境变量设置好了可以不用这一指令
+
+-i指定生成程序的图标
+
+如果不希望运行exe文件时显示命令行，需要加 --noconsole
